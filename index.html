@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en"><head>
+  <base href="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+            var timeleft = 10;
+            var downloadTimer = setInterval(function(){
+                timeleft--;
+                document.getElementById("countdowntimer").textContent = timeleft;
+                if(timeleft <= 0)
+                    clearInterval(downloadTimer);
+            },10000);
+        </script>
+        <script type="text/javascript">
+            // set minutes
+            var mins = 10;
+            // calculate the seconds (don't change this! unless time progresses at a different speed for you...)
+            var secs = mins * 60;
+            function countdown() {
+                setTimeout('Decrement()',1000);
+            }
+            function Decrement() {
+                if (document.getElementById) {
+                    minutes = document.getElementById("minutes");
+                    seconds = document.getElementById("seconds");
+                    // if less than a minute remaining
+                    if (seconds < 59) {
+                        seconds.value = secs;
+                    } else {
+                        minutes.value = getminutes();
+                        seconds.value = getseconds();
+                    }
+                    secs--;
+                    setTimeout('Decrement()',1000);
+                }
+            }
+            function getminutes() {
+                // minutes is seconds divided by 60, rounded down
+                mins = Math.floor(secs / 60);
+                return mins;
+            }
+            function getseconds() {
+                // take mins remaining (as seconds) away from total seconds remaining
+                return secs-Math.round(mins *60);
+            }
+        </script>
+        <title>Social Media Online Jobs </title>
+        <!-- Add Google Font here -->
+        <link rel="stylesheet" href="css.css"> 
+        <link href="plv2.css" rel="stylesheet" type="text/css">
+        <style>body {
+    /* Change Background HERE */
+    background: url(2664_bg_pl.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    /* Change Font style for TITLE HERE */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Change style for BIG BOX */
+#content_box_left {
+    color: white;
+    border: 8px line white;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.85) 32%,rgba(0,0,0,0.65) 100%) !important;
+}
+
+/* Change style for QUESTION BOX */
+#question_block {
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid black;
+}
+
+/* Change style for BUTTON */
+.optbutton {
+    color: white;
+    background-image: linear-gradient(rgb(0, 80, 9) 0%, rgb(0, 48, 5) 100%);
+}</style>         
+    </head>
+    <body>
+        <!-- HEADR AND LOGO OPTIONAL -->
+        <!-- <div style="width:100%; background-image:url('https://img17.com/pl/1/1600px-woolworths-top.jpg')">
+            <img src="https://img17.com/pl/1/woolworths-logo.png" class="logo" />
+        </div>
+		-->
+        <br>
+        <br>
+        <br>
+        <div id="disclaimer" class="date">15 August 2018</div>
+        <div class="row clearfix" id="allcontent">
+            <div class="medium-8 columns" id="content_box_left">
+                <div class="corner-counter">
+                </div>
+                <div id="content">
+                    <div class="wrapper">
+                        <div id="content_text">
+                            <h1><span style="font-size:40px">Online Social Media Jobs That Pay $25 - $50 Per Hour. Without Any Experience Required. Work At Home.</span></h1>
+                            <p>Earn up to $200/day on social media sites.</p>
+                            <p>To apply for the job, please answer 3 questions below:</p>
+                        </div>
+                        <div id="content_image">
+                            <img id="img_prize" src="420x315_2664_.png"> 
+                        </div>
+                    </div>
+                </div>
+                <div id="questions">
+                    <div class="wrapper">
+                        <div id="question_block">
+                            <div id="timer">
+                                <img src="clock.png" alt="" class="clock">You still have 
+                                <input id="minutes" type="text" style="width: 26px; border: none; background-color:none; font-size: 16px; font-weight: bold; color: red;"> : 
+                                <input id="seconds" type="text" style="width: 26px; border: none; background-color:none; font-size: 16px; font-weight: bold; color: red;"> Time To apply for the job 
+                            </div>
+                            <br>
+                            <br>
+                            <div id="question_1" class="question">
+                                <h4>Question 1 of 3</h4>
+                                <h3>Do you want to work from home?</h3>
+                                <button class="optbutton" onclick="next_question()">Yes</button>
+                                <button class="optbutton" onclick="next_question()">No</button>
+                            </div>
+                            <div id="question_2" class="question">
+                                <h4>Question 2 of 3</h4>
+                                <h3>What is your favourite social media platform?</h3>
+                                <button class="optbutton" onclick="next_question()">Facebook</button>
+                                <button class="optbutton" onclick="next_question()">Twitter</button>                                 
+                                <button class="optbutton" onclick="next_question()">Instagram</button>                                 
+                                <button class="optbutton" onclick="next_question()">Youtube</button>  
+                            </div>
+                            <div id="question_3" class="question">
+                                <h4>Question 3 of 3</h4>
+                                <h3>How much do you want to earn?</h3>
+                                <button class="optbutton" onclick="next_question()">Earn up to ($100-300 per week)</button>
+                                <button class="optbutton" onclick="next_question()">Part time job ($300 - 700 per week)</button>
+                                <button class="optbutton" onclick="next_question()">Full time income ($1000+ per week)</button>
+                                                       
+                            </div>
+                        </div>
+                        <div id="results_block">
+                            <div id="result_1" class="result">
+                                <strong>Your answers are being processed...</strong>
+                            </div>
+                            <div id="result_2" class="result">
+                                <strong>congratulations ✔ </strong>
+                                <br>
+                                <strong>A job has been found for you ✔ </strong>
+                            </div>
+                            <div id="result_3" class="result">
+                                <strong>You have been selected! ✔ </strong>
+                                <br>
+                                <strong>You will now be transferred to the job ✔ </strong>
+                            </div>
+                            <img id="prozess_bar" src="loader.gif" alt="loader">
+                        </div>
+                        <div id="footer">
+</div>                         
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="font-size:10px;color:black;padding-top:100px;text-align:center;margin: 0 auto;max-width: 1000px;">
+                    <div class="legal_links">
+                    </div>
+                </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <script>
+var first_title = "fdsfdsfsfd";
+var seconde_title = "4323254545";
+var link = 'https://bit.ly/3TfzvGN';
+var question_idx = 2;
+
+function next_question() {
+	var all_el = document.getElementsByClassName("question");
+	var question_el = document.getElementById("question_" + question_idx);
+	
+
+	for(var i = 0; i < all_el.length; i++) {
+    	all_el[i].style.display = 'none';
+	}
+
+	if(question_idx < (all_el.length + 1)) {
+		question_el.style.display = 'block';
+		question_idx++;
+	} else {
+		hide_block("question_block");
+		show_block("results_block");
+		results();
+	}
+
+	return false;
+}
+
+function show_block(element) {
+		document.getElementById(element).style.display = 'block';
+}
+
+function hide_block(element) {
+		document.getElementById(element).style.display = 'none';
+}
+
+function results() {
+	var load_interval = 3000;
+	var results_idx = 2;
+	var all_result_el = document.getElementsByClassName("result");
+
+	var count_results = setInterval(function() {
+		
+		for(var i = 0; i < all_result_el.length; i++) {
+    		all_result_el[i].style.display = 'none';
+		}
+	
+		document.getElementById("result_" + results_idx).style.display = 'block';
+		results_idx++;
+		
+		if(results_idx > all_result_el.length) {
+			clearInterval(count_results);
+			setTimeout(function(){
+				document.location.href = link;
+			}, load_interval);
+		}
+	}, load_interval);
+}
+</script>
+        <script type="text/javascript">
+    
+    var disclaimer = document.getElementById("disclaimer");
+    
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth(); //January is 0!
+    var yyyy = today.getFullYear();
+    var monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+    
+    if(dd<10) {
+    dd='0'+dd
+    }
+    
+    disclaimer.innerHTML = ""+dd+" "+monthNames[mm]+" "+yyyy+"";
+    
+
+</script>
+        <script>
+countdown();
+</script>
+    
+
+</body></html>
